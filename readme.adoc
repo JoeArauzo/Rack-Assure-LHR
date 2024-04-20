@@ -1,0 +1,77 @@
+= Enter the Project Title
+:doctype: article
+:description: Enter a short description of the project
+:license-type: enter license type
+:author: Author Name 
+:email: author.name@domain.com
+:revnumber: v0.1
+:revdate: 2021-01-01
+:repository-url: https://github.com/JoeArauzo/AsciiDoc-README-Template
+:documentation-url: https://asciidoctor.org/docs/asciidoc-writers-guide/
+:source-highlighter: rouge
+:rouge-style: github
+:!showtitle:
+:icons: font
+//:toc: preamble
+:imagesdir: assets/images
+
+
+// GitHub doesn't render asciidoc exactly as intended, so we adjust settings and utilize some html
+
+ifdef::env-github[]
+
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+
+++++
+
+<p align="center">
+  
+  <!-- REPLACE THE FOLLOWING URL WITH YOUR REPOSITORY'S URL -->
+  <a href="https://github.com/JoeArauzo/AsciiDoc-README-Template">
+    
+    <!-- REPLACE THE PLACEHOLDER LOGO WITH YOUR OWN LOGO AND ADJUST THE SIZE ACCORDINGLY -->
+    <img src="assets/images/placeholder-logo.png" alt="Logo" width="30%" height="30%"></a>
+    
+  <!-- REPLACE THE FOLLOWING WITH YOUR REPOSITORY/PROJECT TITLE -->
+  <h3 align="center">Enter the Project Title</h3>
+  
+  <p align="center">
+    
+    <!-- REPLACE THE FOLLOWING WITH YOUR REPOSITORY/PROJECT'S SHORT DESCRIPTION -->
+    Enter a short description of the project
+    
+    <br>
+    
+    <!-- REPLACE THE FOLLOWING URL WITH YOUR REPOSITORY'S DOCUMENTATION URL -->
+    <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/"><strong>An optional link »</strong></a>
+    
+    <br>
+    <hr>
+    <h3 align="center">Coming soon. Watch this repository for releases.</h3>
+  </p>
+</p>
+
+++++
+
+endif::[]
+
+// This conditional section applies to all environments, except GitHub
+ifndef::env-github[]
+image::placeholder-logo.png[Logo, align=center, width=30%]
+[.text-center]
+[.lead]
+*{doctitle}*
+
+[.text-center]
+_{description}_ +
+{documentation-url}[An optional link »]
+
+'''
+[.text-center]
+== Coming soon. Watch this repository for releases
+endif::[]
+
