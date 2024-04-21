@@ -47,7 +47,7 @@ ifdef::env-github[]
     <br>
     
     <!-- REPLACE THE FOLLOWING URL WITH YOUR REPOSITORY'S DOCUMENTATION URL -->
-    <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/"><strong>An optional link »</strong></a>
+    <a href="https://asciidoctor.org/docs/asciidoc-writers-guide/"><strong>AsciiDoc Writer's Guide »</strong></a>
     
     <br>
     <hr>
