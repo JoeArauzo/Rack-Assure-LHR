@@ -68,7 +68,7 @@ image::placeholder-logo.png[Logo, align=center, width=30%]
 
 [.text-center]
 _{description}_ +
-{documentation-url}[An optional link »]
+{documentation-url}[AsciiDoc Writer's Guide »]
 
 '''
 [.text-center]
