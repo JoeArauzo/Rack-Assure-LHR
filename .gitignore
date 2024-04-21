@@ -1,7 +1,8 @@
 # Mine
 .vscode
 .DS_Store
-github-test.adoc
+assets/setup/log*
+.vagrant
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
